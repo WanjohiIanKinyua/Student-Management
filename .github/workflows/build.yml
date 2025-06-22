@@ -1,0 +1,30 @@
+# This workflow will build a Java project with Maven, and cache/restore any dependencies to improve the workflow execution time
+# For more information see: https://help.github.com/actions/language-and-framework-guides/building-and-testing-java-with-maven
+
+name: Build CI
+
+on:
+  pull_request:
+    branches: [ master ]
+
+env:
+  MYSQL_DATABASE: student
+  MYSQL_ROOT_PASSWORD: password
+
+jobs:
+  build:
+    runs-on: [self-hosted, Windows, X64, Fullstack_Runner]
+#    services:
+#      mysql-db:
+#        image: mysql:8.0
+#        env:
+#          MYSQL_ROOT_PASSWORD: ${{ env.MYSQL_ROOT_PASSWORD}}
+#          MYSQL_DATABASE: ${{ env.MYSQL_DATABASE}}
+#        ports:
+#          - 3306:3306
+#        options: --health-cmd="mysqladmin ping" --health-interval=10s --health-timeout=5s --health-retries=5
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Maven Clean Package
+        run: mvn clean package -DskipTests

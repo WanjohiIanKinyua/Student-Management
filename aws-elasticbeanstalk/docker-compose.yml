@@ -1,0 +1,16 @@
+version: "3.8"
+services:
+  web-app:
+    image: ntloc/web-app-fullstack-springboot-angular:latest
+    ports:
+      - "8080:8080"
+    build:
+      context: .
+      dockerfile: ./Dockerfile  
+#    env_file:
+#      - ./aws-elasticbeanstalk/secret-dev.env
+    environment:
+      SPRING_PROFILES_ACTIVE: default
+    restart: "always"
+volumes:
+  data:
