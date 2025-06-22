@@ -14,8 +14,7 @@
 ## Process
 ![process-build-finish](https://user-images.githubusercontent.com/86077654/144560372-7dcdf4eb-f765-4d59-b368-1a6087681ce2.png)
 
-## Application run live
--Link: http://web-app-fullstack.ap-southeast-1.elasticbeanstalk.com/
+
 
 ## Technology
 - Spring Boot
@@ -28,16 +27,3 @@
 - AWS
 - Github Action
 
-## Frontend (client) communicate with backend (server)
-![communicate](https://user-images.githubusercontent.com/86077654/141684313-71b57416-fa47-4010-9b8c-60d981a8efce.png)
-
-## Angular
-![angular](https://user-images.githubusercontent.com/86077654/139235800-ecf841b2-52b3-4211-b271-cd479941ba9e.png)
-
-## Spring Boot
-![spring-boot](https://user-images.githubusercontent.com/86077654/140656034-bb9a9e11-7b8f-4bdb-9ea6-661af5a1697c.png)
-
-## ER Diagram
-![student-management-erd](https://user-images.githubusercontent.com/86077654/140683431-fce3d5de-e51b-4b2b-877a-7e3301cec41e.png)
-
-Good luck !!!
